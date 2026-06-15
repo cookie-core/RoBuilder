@@ -1,4 +1,23 @@
-<p> Circle </p>
+<div>
+    <div class="horizontal">
+        <p> size of edges </p>
+        <!-- maybe you dont understand now why i set step here for 0.05, if yes, then wait updates (bruh i didnt even do ~beta~ sigma version of this stuff, and you already need to wait next update xddd) -->
+        <input type="range" id="cbes-edges-size-slider" min="0.2" max="16" step="0.1" value="0.2">
+        <!-- you wanna ask me what does cbes mean? This is a.. Wait, ugh, you dont want~~ -->
+        <p id="cbes-edges-size"> AAAA you loaded mee <3 </p>
+    </div>
+    <div class="horizontal">
+        <p> count of edges </p>
+        <input type="range" id="cbes-edges-count-slider" min="0" max="9" step="1" value="0">
+
+        <p id="cbes-edges-count"> im not as kind as "cbes-edges-size" above </p>
+    </div>
+    <div id="cbes-body">
+        <p> Thats how it will look: </p>
+        <p> Btw angle between edges is <span id="cbes-angle-between-edges">idk</span> degrees.</p>
+        <svg width="400" height="400" viewBox="-200 -200 400 400" id="cbes-field"> </svg>
+    </div>
+</div>
 
 <!-- i use NixOS btw -->
 
